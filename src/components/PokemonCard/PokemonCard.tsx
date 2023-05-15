@@ -17,6 +17,7 @@ import {
 } from "../../store/thunks/pokemons.thunks";
 import { selectUid } from "../../store/selectors/user.selector";
 import { selectPokemonFavorites } from "../../store/selectors/pokemon.selector";
+import { BASE_URL_IMAGE_POKEMON } from "../../consts/image.const";
 
 interface PokemonCardProps {
   pokemon: Pokemon;
@@ -40,7 +41,7 @@ export const PokemonCard: FC<PokemonCardProps> = ({
   useEffect(() => {
     if (url) {
       setDefaultImage(
-        `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${id}.svg`
+        `${BASE_URL_IMAGE_POKEMON}${id}.svg`
       );
       getData();
       findFavorite();
@@ -54,7 +55,7 @@ export const PokemonCard: FC<PokemonCardProps> = ({
         loadStats(res.data?.stats);
         setTypes(res.data.types);
       })
-      .catch(() => {});
+      .catch(() => { });
   };
 
   const loadStats = (stats: Stat[]) => {
