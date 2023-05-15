@@ -20,7 +20,7 @@ export const Nabvar = () => {
         <img src={altPokemonLogo} alt="" />
       </figure>
       <input className="navbar__menu-btn" type="checkbox" id="menu-btn" />
-      <label className="navbar__menu-icon">
+      <label className="navbar__menu-icon" htmlFor="menu-btn">
         <span className="navbar__menu-navicon"></span>
       </label>
       <ul className="navbar__menu">
