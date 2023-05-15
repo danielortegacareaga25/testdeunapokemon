@@ -1,3 +1,7 @@
+# Test deuna pokemon
+### This project is builded whit React, Typescript, Formkik, Yup, Axios, Firebase & Redux
+#### You need to run `npm install && npm run dev` to run de application
+
 # Login Page
 ### This page is connected to firebase to login with credentials
 
