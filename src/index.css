@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Righteous", cursive;
+}
+
+:root {
+  --bg-color: #c9c7c7;
+  --bg-white: rgba(255, 255, 255, 0.8);
+  --bg-white_nt: #f1f1f1;
+  --bg-black: #000;
+  --bg-green: rgb(14, 213, 127);
+  --bg-crystal: rgba(22, 22, 22, 0.534);
+  --accent-color: #3c3718;
+  --secondary-color: #d1f6f7;
+  --main-color: #37d0d3;
+  --text-black: #000000;
+  --text-white: #ffffff;
+  --shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 20px rgba(0, 0, 0, 0.7);
+}

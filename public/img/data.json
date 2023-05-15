@@ -1,0 +1,151 @@
+
+{
+    "backgrounds":[
+        {
+            "name": "bug",
+            "url": "/images/bg_bug.jpg"
+        },
+        {
+            "name": "dark",
+            "url": "/images/bg_dark.jpg"
+        },
+        {
+            "name": "dragon",
+            "url": "/images/bg_dragon.jpg"
+        },
+        {
+            "name": "electric",
+            "url": "/images/bg_electric.jpg"
+        },
+        {
+            "name": "fairy",
+            "url": "/images/bg_fairy.jpg"
+        },
+        {
+            "name": "fighting",
+            "url": "/images/bg_fight.jpg"
+        },
+        {
+            "name": "fire",
+            "url": "/images/bg_fire.jpg"
+        },
+        {
+            "name": "flying",
+            "url": "/images/bg_flying.png"
+        },
+        {
+            "name": "ghost",
+            "url": "/images/bg_ghost.jpg"
+        },
+        {
+            "name": "grass",
+            "url": "/images/bg_grass.jpg"
+        },
+        {
+            "name": "ground",
+            "url": "/images/bg_ground.jpg"
+        },
+        {
+            "name": "ice",
+            "url": "/images/bg_ice.jpg"
+        },
+        {
+            "name": "normal",
+            "url": "/images/bg_normal.jpg"
+        },
+        {
+            "name": "poison",
+            "url": "/images/bg_posion.jpg"
+        },
+        {
+            "name": "psychic",
+            "url": "/images/bg_psychic.jpg"
+        },
+        {
+            "name": "rock",
+            "url": "/images/bg_rock.jpg"
+        },
+        {
+            "name": "steel",
+            "url": "/images/bg_steel.jpg"
+        },
+        {
+            "name": "water",
+            "url": "/images/bg_water.jpg"
+        }
+    ],
+    "icons": [
+                {
+                    "name": "bug",
+                    "url": "/images/bug.webp"
+                },
+                {
+                    "name": "dark",
+                    "url": "/images/dark.webp"
+                },
+                {
+                    "name": "dragon",
+                    "url": "/images/dragon.webp"
+                },
+                {
+                    "name": "electric",
+                    "url": "/images/electric.webp"
+                },
+                {
+                    "name": "fairy",
+                    "url": "/images/fairy.webp"
+                },
+                {
+                    "name": "fighting",
+                    "url": "/images/fighting.webp"
+                },
+                {
+                    "name": "fire",
+                    "url": "/images/fire.webp"
+                },
+                {
+                    "name": "flying",
+                    "url": "/images/flying.webp"
+                },
+                {
+                    "name": "ghost",
+                    "url": "/images/ghost.webp"
+                },
+                {
+                    "name": "grass",
+                    "url": "/images/grass.webp"
+                },
+                {
+                    "name": "ground",
+                    "url": "/images/ground.webp"
+                },
+                {
+                    "name": "ice",
+                    "url": "/images/ice.webp"
+                },
+                {
+                    "name": "normal",
+                    "url": "/images/normal.webp"
+                },
+                {
+                    "name": "poison",
+                    "url": "/images/poison.webp"
+                },
+                {
+                    "name": "psychic",
+                    "url": "/images/psychic.webp"
+                },
+                {
+                    "name": "rock",
+                    "url": "/images/rock.webp"
+                },
+                {
+                    "name": "steel",
+                    "url": "/images/steel.webp"
+                },
+                {
+                    "name": "water",
+                    "url": "/images/water.webp"
+                }
+    ]
+}

@@ -1,0 +1,30 @@
+@import "./../../scss/breakpoints";
+@import "./../../scss/mixins";
+
+.welcome {
+  display: flex;
+  position: relative;
+  background-image: url("/img/bg_site.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  &__form {
+    background-color: var(--bg-white);
+    padding: 20px;
+    max-width: calc(100vw - 30px);
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px 2px var(--bg-black);
+    @include respond-to("small") {
+      border-radius: 10px;
+    }
+  }
+}

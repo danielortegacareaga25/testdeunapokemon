@@ -1,0 +1,14 @@
+.favorites {
+  &__container {
+    min-width: 100vw;
+    min-height: 100vh;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 0;
+    width: 100%;
+    gap: 3em;
+  }
+}

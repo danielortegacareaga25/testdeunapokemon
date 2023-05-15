@@ -1,0 +1,12 @@
+.pokemons {
+  &__container {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 0;
+    width: 100%;
+    gap: 3em;
+  }
+}

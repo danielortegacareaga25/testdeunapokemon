@@ -1,0 +1,114 @@
+.navbar {
+  &__container {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    height: 80px;
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 0px 20px;
+    text-decoration: none;
+    max-width: 150px;
+    max-height: 150px;
+    > img {
+      max-width: 150px;
+      max-height: 150px;
+      object-fit: cover;
+    }
+  }
+  &__menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    @media (min-width: 768px) {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    li {
+      @media (min-width: 768px) {
+        float: left;
+      }
+    }
+    li span {
+      display: block;
+      padding: 20px 20px;
+      border-right: 1px solid #f4f4f4;
+      text-decoration: none;
+      &:hover {
+        background-color: #f4f4f4;
+      }
+    }
+    &-icon {
+      @media (min-width: 768px) {
+        display: none;
+      }
+      cursor: pointer;
+      display: inline-block;
+      float: right;
+      padding: 28px 20px;
+      position: relative;
+      user-select: none;
+    }
+
+    &-navicon {
+      background: #333;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background 0.2s ease-out;
+      width: 18px;
+      &::before,
+      &::after {
+        background: #333;
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all 0.2s ease-out;
+        width: 100%;
+      }
+      &::before {
+        top: 5px;
+      }
+      &::after {
+        top: -5px;
+      }
+    }
+    &-btn {
+      display: none;
+      &:checked ~ .navbar__menu {
+        max-height: 240px;
+      }
+      &:checked ~ .navbar__menu-icon .navbar__menu-navicon {
+        background: transparent;
+        &::before {
+          transform: rotate(-45deg);
+        }
+        &::after {
+          transform: rotate(45deg);
+        }
+      }
+      &:checked ~ .navbar__menu-icon:not(.steps) .navbar__menu-navicon:before,
+      .navbar__menu-icon:not(.steps) .navbar__menu-navicon:after {
+        top: -5px;
+      }
+    }
+  }
+}

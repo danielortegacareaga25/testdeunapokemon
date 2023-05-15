@@ -1,0 +1,109 @@
+@import "./../../scss/components";
+
+.pokemon {
+  &__card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    border-radius: 1em;
+    box-shadow: var(--shadow);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    @media screen and (min-width: 589px) {
+      width: 350px;
+    }
+  }
+  &__name {
+    display: grid;
+    place-items: center;
+    max-width: 300px;
+    padding: 0 0.5em;
+    height: 35px;
+    border-radius: 0.5em;
+    color: var(--text-white);
+    background-color: var(--bg-crystal);
+    margin: 10px 0;
+  }
+  &__sprite {
+    display: grid;
+    place-items: center;
+    width: 200px;
+    height: 200px;
+    background-image: url("../../assets/img/pokeball.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    > img {
+      max-width: 200px;
+      max-height: 200px;
+      object-fit: cover;
+      &:hover {
+        transform: scale(1.5);
+        z-index: 10;
+        -webkit-transition: transform 0.5s ease-in-out;
+        -moz-transition: transform 0.5s ease-in-out;
+        -ms-transition: transform 0.5s ease-in-out;
+      }
+    }
+  }
+
+  &__data {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.7em;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+    list-style: none;
+    border-radius: 1em;
+    background-color: var(--bg-white);
+    &-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    &-bar {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5em;
+      > ::-webkit-progress-bar {
+        background-color: #3c3c3c;
+        border-radius: 1em;
+      }
+      ::-webkit-progress-value {
+        border-radius: 0.5em;
+      }
+      ::-moz-progress-bar {
+        background: var(--main-color);
+        border-radius: 0.5em;
+      }
+
+      > label {
+        width: 60px;
+        font-weight: bold;
+      }
+      > progress {
+        -webkit-appearance: none;
+        appearance: none;
+        border-radius: 1em;
+      }
+      > span {
+        width: 35px;
+      }
+    }
+    &-fav {
+      @include button;
+      max-width: 200px;
+    }
+  }
+}

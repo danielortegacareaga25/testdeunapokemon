@@ -1,0 +1,39 @@
+@mixin default-view {
+  padding: 0 15px;
+  width: -webkit-fill-available;
+  margin: 10px;
+  height: 35px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+@mixin input {
+  @include default-view;
+  border: 2px solid var(--secondary-color);
+  outline: none;
+  color: var(--accent-color);
+  transition: all 500ms ease-out;
+  text-align: center;
+}
+
+@mixin button {
+  @include default-view;
+  background: var(--accent-color);
+  margin: 10px 15px 5px 15px;
+  color: var(--secondary-color);
+  transition: all 500ms ease-out;
+  animation: lights 4000ms infinite ease-in;
+  border: 0;
+  text-transform: uppercase;
+
+  &:hover {
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0px 0px 10px 2px var(--secondary-color);
+    animation: none;
+  }
+}
+
+@mixin error_input {
+  text-align: center;
+  width: 100%;
+}

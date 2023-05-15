@@ -1,0 +1,19 @@
+.pages {
+  display: flex;
+  position: relative;
+  background-image: url("/img/bg_site.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  overflow: hidden;
+
+  &__container {
+    width: "100vw";
+    min-height: "100vh";
+  }
+}
